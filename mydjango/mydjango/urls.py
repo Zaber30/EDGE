@@ -18,7 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.urls import  path
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     # path('run/',views.index,name='index')
+    # path('run/',include('run.urls')),
     path('run/',include('run.urls')),
+    path('accounts/',include('accounts.urls')),
+    path('products/',include('products.urls')),
+    path('categories/',include('categories.urls')),
+    path('Product/',include('Product.urls')),
+    path('','SimpleView.htmlpage'),
+
 ]

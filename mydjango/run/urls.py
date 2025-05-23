@@ -3,8 +3,7 @@ from . import views
 from .test import first
 urlpatterns = [
     # path('admin/', admin.site.urls),
-     path('',views.index,name='index'),
-     # path('play/', first.render,name='render'),
-     path('html2/',views.htmlpage, name='htmlpage'),
-
+    #  path('',views.index,name='index'),
+    #  path('play/', first.play,name='play'),
+     path('bootstrap/',views.bootstrap,name='bootstrap'),
 ]

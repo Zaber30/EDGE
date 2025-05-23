@@ -1,4 +1,5 @@
-from django.http import HttpResponse
 
-def render(request):
-    return HttpResponse("Hello, world!")
+from django.http import HttpResponse
+from django.shortcuts import render
+# def play(request):
+#     return HttpResponse("Hello, world!")
